@@ -13,59 +13,67 @@ Let's fix this mess!
   </head>
   <!--someone forgot to wrap the content of our webpage with an HTML element,
 	which one was it again?-->
-  <div>
-    <div>
-      <div>Jane Doe</div>
-      <!--Which elements could be used to link to parts of the webpage,
+  <body>
+    <main>
+      <header>
+        <h1>Jane Doe</h1>
+        <!--Which elements could be used to link to parts of the webpage,
 		which appear below?-->
-      <div id="nav">
-        <div>About Me</div>
-        <div>Contact</div>
-        <div>Skillset</div>
-      </div>
-    </div>
-    <!--Looks like the following part is the central content of our webpage.-->
-    <div>
-      <div id="about-me">
-        <div>About me</div>
-        <div>
-          Hi there! Welcome to my personal website. Here is gathered the most
-          important information about me. If you want to work with me or get to
-          know me, please don't hesitate to get in contact.
+        <div id="nav">
+          <a href="about-me">About Me</a>
+          <a href="contact">Contact</a>
+          <a href="skills">Skillset</a>
         </div>
-        <!--What element could be used to combine an image with a descriptive caption?-->
-        <div>
-          <img
-            src="https://source.unsplash.com/random/400x300?fruit"
-            alt="a random picture"
-          />
-          <div>
-            A random picture, because I would like to maintain my privacy and
-            let my code speak for me, instead of images.
-          </div>
-        </div>
-      </div>
+      </header>
+      <!--Looks like the following part is the central content of our webpage.-->
+      <section>
+        <section id="about-me">
+          <h2>About me</h2>
+          <section>
+            <h3>
+              Hi there! Welcome to my personal website. Here is gathered the
+              most important information about me. If you want to work with me
+              or get to know me, please don't hesitate to get in contact.
+            </h3>
+          </section>
+          <!--What element could be used to combine an image with a descriptive caption?-->
+          <section>
+            <img
+              src="https://source.unsplash.com/random/400x300?fruit"
+              alt="a random picture"
+            />
+            <h3>
+              A random picture, because I would like to maintain my privacy and
+              let my code speak for me, instead of images.
+            </h3>
+            <img
+              src="https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif?cid=ecf05e472bg7hdc8ztj2ok7xcgscedjjybtkkc9d2eapq54l&ep=v1_gifs_trending&rid=giphy.gif&ct=g"
+              alt="image"
+            />
+          </section>
+        </section>
 
-      <div id="contact">
-        <div>Contact</div>
-        <!--When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working?-->
-        <div href="https://github.com/spiced-academy">GitHub</div>
-        <div href="https://de.linkedin.com/">LinkedIn</div>
-        <div href="https://codesandbox.io/">CodeSandbox</div>
-      </div>
+        <section id="contact">
+          <h2>Contact</h2>
+          <!--When clicking on these element, nothing happens! But I want to be redirected to the other websites. Why is it not working?-->
+          <a href="https://github.com/spiced-academy">GitHub</a>
+          <a href="https://de.linkedin.com/">LinkedIn</a>
+          <a href="https://codesandbox.io/">CodeSandbox</a>
+        </section>
 
-      <div id="skills">
-        <div>Skillset</div>
-        <!--This part could use some bulletpoint to be more structured-->
-        <div>
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>JavaScript</div>
-          <div>React</div>
-          <div>Painting rainbows</div>
-          <div>Party</div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <section id="skills">
+          <h2>Skillset</h2>
+          <!--This part could use some bulletpoint to be more structured-->
+          <section>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Painting rainbows</li>
+            <li>Party</li>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
