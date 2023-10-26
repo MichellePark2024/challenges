@@ -30,19 +30,76 @@ button {
 /* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
+  background-color: #008000;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: lemonchiffon;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 25px;
+
+  /*
+  border-width: 0;
+  border-radius: 5px;
+  background-color: blue;
+  color: lemonchiffon;
+  font-family: Impact;*/
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
 }
 
 .button2 {
+  padding: 30px 100px;
+  font-size: 18pt;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-width: 0;
+  border-color: white;
+  color: blue;
+  /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
+}
+.button2:hover {
+  background-color: blue;
+  color: white;
+  /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
+}
+.button2:active {
+  background-color: lemonchiffon;
+
+  color: blue;
   /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
 }
 
 .button3 {
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  font-size: 16pt;
+  font-family: Fantasy;
+  background-color: white;
+  color: blue;
+  border: 4px solid blue;
+  border-radius: 8px;
   /*Style me! You can test out changing the font, or font size, ...*/
+}
+.button3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button4 {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  box-shadow: #1919190a 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
 }
 
+.button4:hover {
+  background-color: green;
+  color: white;
+}
 /* Feel free to play around with other properties, as well. */
