@@ -6,7 +6,10 @@ console.clear();
    The formula is: square = number * number
 */
 
-function printSquare(number) {}
+function printSquare(number) {
+   const square = number * number;
+   console.log(square);
+}
 
 printSquare(3);
 printSquare(5);
@@ -16,6 +19,14 @@ printSquare(5);
    the circumference to the console. The function does not exist yet.
    The formula is: circumference = 2 * Pi * radius
 */
+
+function printCircumference(radius){
+   const circumference = 2 * Math. PI * radius;
+   console.log(circumference);
+}
+printCircumference(4);
+printCircumference(6);
+
 
 // Uncomment the following function calls and implement the function printCircumference
 
@@ -29,6 +40,12 @@ printSquare(5);
    The function does not exist yet.
    The formula is: area = width * length
 */
+function printRectangleArea(width,length){
+   const area = width * length;
+   console.log("The area of the rectangle is " + area);
+}
+printRectangleArea(5, 7);
+printRectangleArea(3, 4);
 
 // Uncomment the following function calls and implement the function printRectangleArea
 
