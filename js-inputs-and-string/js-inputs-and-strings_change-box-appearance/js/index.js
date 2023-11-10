@@ -16,3 +16,25 @@ For further information check MDN:
 - about CSS declarations with "style": https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
 
 */
+const box = document.querySelector('[data-js="box"]');
+const colorSlider = document.querySelector('[data-js="input-color"]');
+const radiusSlider = document.querySelector('[data-js="input-radius"]');
+const rotationSlider = document.querySelector('[data-js="input-rotation"]');
+
+
+colorSlider.addEventListener("change", (event) => {
+    const colorSliderValue = colorSlider.value;
+    box.style.backgroundColor = `hsl(${colorSliderValue}deg 30% 50%)`;
+});
+
+
+radiusSlider.addEventListener("change", (event) => {
+    const radiusSliderValue = radiusSlider.value;
+    box.style.borderRadius = `${radiusSliderValue}%`;
+    
+});
+
+rotationSlider.addEventListener("change", (event) => {
+    const rotationValue = rotationSlider.value;
+    box.style.transform = `rotate(${rotationValue}deg)`;
+});
