@@ -14,13 +14,22 @@ const languages = {
   PT: "Portuguese",
   RU: "Russian",
   ZH: "Chinese",
+  KR: "Korean"
 };
 
 const select = document.createElement("select");
 select.name = "languages";
 main.append(select);
 
+
 // --v-- write/change code here --v--
+for(const language in languages){
+  // console.log(`${language}: ${languages[language]}`)
+  const option = document.createElement("option");
+  option.value = languages[language]
+  option.textContent = languages[language]
+  select.append(option);
+}
 
 // --^-- write/change code here --^--
 
@@ -38,5 +47,13 @@ main.append(navElement);
 navElement.append(ul);
 
 // --v-- write/change code here --v--
-
+for(const key in nav){
+  console.log(nav[key].text)
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = nav[key].href
+  a.textContent = nav[key].text
+  li.append(a);
+  ul.append(li);
+}
 // --^-- write/change code here --^--
