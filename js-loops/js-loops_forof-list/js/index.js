@@ -18,5 +18,7 @@ const programmingLanguages = [
 ];
 
 // --v-- write/change code here --v--
-
+for (const programmingLanguage of programmingLanguages){
+  console.log(programmingLanguage)
+}
 // --^-- write/change code here --^--
