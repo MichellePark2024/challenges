@@ -41,6 +41,22 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+try{
+  const response = await fetch("https://swapi.dev/api/people");
+
+  if (response.ok){
+    const data = await response.jason();
+    console.log (data);
+    return data;
+  } else {
+    // Failure (Bad Response)
+    console.error("Bad Response");
+  }
+} catch (error) {
+  // Failure (Network error, etc)
+  console.error("An Error occurred");
+}
+  // fetch(); // ?
+
 }
