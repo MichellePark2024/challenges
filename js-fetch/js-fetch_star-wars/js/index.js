@@ -37,6 +37,7 @@ const EXAMPLE_DATA = {
 const firstCard = Card(EXAMPLE_DATA);
 renderElement(firstCard);
 
+
 fetchDataAndRender();
 
 // --v-- your code below this line --v--
@@ -46,9 +47,17 @@ try{
   const response = await fetch("https://swapi.dev/api/people");
 
   if (response.ok){
-    const data = await response.jason();
+    const data = await response.json();
     console.log (data);
-    return data;
+    
+    //create new card add each array
+    data.results.forEach(element => { 
+      const newCard = Card(element);
+      renderElement(newCard);
+
+    });
+
+    // return data;
   } else {
     // Failure (Bad Response)
     console.error("Bad Response");
