@@ -23,7 +23,7 @@ const cards = [
   },
 ];
 
-const onlyCardWithIdTwo = null;
+const onlyCardWithIdTwo = ;
 
 const allCardsWith3Tags = null;
 
