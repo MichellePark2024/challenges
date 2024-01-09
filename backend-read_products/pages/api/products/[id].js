@@ -11,9 +11,9 @@ export default async function handler(request, response) {
   if (request.method === "GET") {
     // const products = await Product.findById(id).populate([{ path: "reviews", strictPopulate: false }]);
     const product = await Product.findById(id).populate("reviews");
-    console.log(products)
+    console.log(product)
 
-    return response.status(200).json(products);
+    return response.status(200).json(product);
   }
 
   else {
