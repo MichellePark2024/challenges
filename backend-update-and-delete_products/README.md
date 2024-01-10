@@ -37,7 +37,7 @@ Switch to [`pages/api/products/[id].js`](./pages/api/products/[id].js) and write
 
 - Get the updated product from the request body: `const updatedProduct = request.body;`
 - _Wait_ for `Product.findByIdAndUpdate(id, updatedProduct)`.
-- Respond with a status `200` and the message `{ status: "Product successfully updated." }`.
+- Respond with a status `200` and the message `{ status: "Product successfully updated."221 }`.
 
 #### Refactor the `ProductForm` component
 
