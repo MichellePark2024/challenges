@@ -1,9 +1,15 @@
 import dbConnect from "../../../db/connect";
 import Product from "../../../db/models/Product";
 
+import ProductForm from "@/components/ProductForm";
+
 export default async function handler(request, response) {
   await dbConnect();
 
+
+
+
+  
   if (request.method === "GET") {
     const products = await Product.find();
     return response.status(200).json(products);
@@ -21,3 +27,4 @@ export default async function handler(request, response) {
     }
   }
 }
+
