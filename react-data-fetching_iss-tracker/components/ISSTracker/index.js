@@ -17,32 +17,7 @@ const { data, error,mutate, isLoading } = useSWR(
 
   const { latitude, longitude } = data;
 
-  // const [coords, setCoords] = useState({
-  //   longitude: 0,
-  //   latitude: 0,
-  // });
-
-  // async function getISSCoords() {
-  //   try {
-  //     const response = await fetch(URL);
-  //     if (response.ok) {
-  //       const data = await response.json();
-  //       setCoords({ longitude: data.longitude, latitude: data.latitude });
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     getISSCoords();
-  //   }, 5000);
-
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // }, []);
+  
 
   if(!data){
     return
